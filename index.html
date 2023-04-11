@@ -1,99 +1,94 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-* {
-  box-sizing: border-box;
-}
+   <head>
+      <script src="https://js.chargebee.com/v2/chargebee.js" data-cb-site="solutions-int-test"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+         * {
+            box-sizing: border-box;
+         }
 
-.columns {
-  float: left;
-  width: 33.3%;
-  padding: 8px;
-}
+         .columns {
+            width: 100%;
+            padding: 8px;
+         }
 
-.price {
-  list-style-type: none;
-  border: 1px solid #eee;
-  margin: 0;
-  padding: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
+         .price {
+            list-style-type: none;
+            border: 1px solid #eee;
+            margin: 0;
+            padding: 0;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+         }
 
-.price:hover {
-  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
-}
+         .price:hover {
+            box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+         }
 
-.price .header {
-  background-color: #22b6e0;
-  color: white;
-  font-size: 25px;
-}
+         .price .header {
+            background-color: #6140B6;
+            color: white;
+            font-size: 25px;
+         }
 
-.price li {
-  border-bottom: 1px solid #eee;
-  padding: 20px;
-  text-align: center;
-}
+         .price li {
+            border-bottom: 1px solid #eee;
+            padding: 20px;
+            text-align: center;
+         }
 
-.price .grey {
-  background-color: #eee;
-  font-size: 20px;
-}
+         .price .grey {
+            background-color: #79A7D3;
+            font-size: 20px;
+         }
 
-.button {
-  background-color: #97a52f;
-  border: none;
-  color: white;
-  padding: 10px 25px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 18px;
-}
+         .button {
+            background-color: #463296;
+            border: none;
+            color: #ffffff;
+            padding: 10px 25px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 10px;
+         }
 
-@media only screen and (max-width: 600px) {
-  .columns {
-    width: 100%;
-  }
-}
-</style>
-
-
-</head>
-<body>
-
-<h2 style="text-align:center">Company x</h2>
-<p style="text-align:center">Broadband business with 3
-  different plans</p>
-
-<div class="columns">
-  <ul class="price">
-    <li class="header">Plan 1: Flat fee</li>
-    <li class="grey">Price: $100 for 200 GB</li>
-    <li>Once 200 GB is consumed, speed comes down to 2 Mbps</li>
-    <li class="grey"><a href="#" class="button">Select Plan</a></li>
-  </ul>
-</div>
-
-<div class="columns">
-  <ul class="price">
-    <li class="header">Plan 2: Usage-based</li>
-    <li class="grey">Base cost: $200 for 500 GB</li>
-    <li>$1 per additional GB consumed thereafter</li>
-    <li class="grey"><a href="#" class="button">Select Plan</a></li>
-  </ul>
-</div>
-
-<div class="columns">
-  <ul class="price">
-    <li class="header">Plan 3: Custom pricing</li>
-    <li class="grey">custom pricing </li>
-    <li>Contact us for custom pricing options for your business</li>
-    <li class="grey"><a href="#" class="button">Contact Us</a></li>
-  </ul>
-</div>
-
-</body>
+         @media only screen and (min-width: 600px) {
+            .columns {
+               float: left;
+               width: 33.3%;
+            }
+         }
+      </style>
+   </head>
+   <body>
+      <h1 style="text-align:center">Mahesha.co</h1>
+      <p style="text-align:center">Lorem ipsum bla bla bla</p>
+      <div class="columns">
+         <ul class="price">
+            <li class="header">Plan 1: Flat fee</li>
+            <li class="grey">Price: $100 for 200 GB</li>
+            <li>Once 200 GB is consumed, speed comes down to 2 Mbps</li>
+            <li class="grey"><a href="javascript:void(0)" data-cb-type="checkout" data-cb-plan-id="mahesh_100gb" >subscribe</a></li>
+         </ul>
+      </div>
+      <div class="columns">
+         <ul class="price">
+            <li class="header">Plan 2: Usage-based</li>
+            <li class="grey">Base cost: $200 for 500 GB</li>
+            <li>$1 per additional GB consumed thereafter</li>
+            <li class="grey"><a href="javascript:void(0)" data-cb-type="checkout" data-cb-plan-id="mahesh_500gb" >subscribe</a></li>
+         </ul>
+      </div>
+      <div class="columns">
+         <ul class="price">
+            <li class="header">Plan 3: Custom pricing</li>
+            <li class="grey">Custom pricing </li>
+            <li>Contact us for custom pricing options for your business</li>
+            <li class="grey"><a href=“tel:9008213127” class="button">Contact Us</a></li>
+         </ul>
+      </div>
+      <br><br><p style="text-align:center">© Copyright 2023, Mahesha All rights reserved / Legal / Privacy / Cookie Settings / T&C</p>
+   </body>
 </html>
