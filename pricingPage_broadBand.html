@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #22b6e0;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #97a52f;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+</style>
+
+
+</head>
+<body>
+
+<h2 style="text-align:center">Company x</h2>
+<p style="text-align:center">Broadband business with 3
+  different plans</p>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Plan 1: Flat fee</li>
+    <li class="grey">Price: $100 for 200 GB</li>
+    <li>Once 200 GB is consumed, speed comes down to 2 Mbps</li>
+    <li class="grey"><a href="#" class="button">Select Plan</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Plan 2: Usage-based</li>
+    <li class="grey">Base cost: $200 for 500 GB</li>
+    <li>$1 per additional GB consumed thereafter</li>
+    <li class="grey"><a href="#" class="button">Select Plan</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Plan 3: Custom pricing</li>
+    <li class="grey">custom pricing </li>
+    <li>Contact us for custom pricing options for your business</li>
+    <li class="grey"><a href="#" class="button">Contact Us</a></li>
+  </ul>
+</div>
+
+</body>
+</html>
